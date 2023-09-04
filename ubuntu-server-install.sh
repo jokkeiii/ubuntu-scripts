@@ -48,7 +48,6 @@ sudo nala install gnome-shell-extension-manager gnome-tweaks adwaita-icon-theme-
 
 touch /home/$1/.bash_aliases
 echo 'alias cls="clear"' | tee /home/$1/.bash_aliases
-echo 'alias ll="ls -al"' | tee /home/$1/.bash_aliases
 source /home/$1/.bashrc
 
 # gsettings set org.gnome.shell.extensions.dash-to-dock show-mounts false
