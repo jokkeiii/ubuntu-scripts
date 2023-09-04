@@ -45,7 +45,7 @@ sudo nala install powertop tlp git -y
 echo -e "\n"
 echo Installing gnome tools
 echo -e "\n"
-sudo nala install gnome-terminal gnome-shell-extension-manager gnome-tweaks -y
+sudo nala install gnome-terminal gnome-shell-extension-manager gnome-tweaks adwaita-icon-theme-full -y
 
 echo -e "\n"
 echo Installing gnome and gdm
