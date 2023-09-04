@@ -61,7 +61,7 @@ echo 'alias cls="clear"' | tee /home/$1/.bash_aliases
 echo 'alias ll="ls -al"' | tee /home/$1/.bash_aliases
 source /home/$1/.bashrc
 
-gsettings set org.gnome.shell.extensions.dash-to-dock show-mounts false
+# gsettings set org.gnome.shell.extensions.dash-to-dock show-mounts false
 
 git config --global user.name "jokkeiii"
 git config --global user.email "joakim.ijas@gmail.com"
