@@ -1,9 +1,14 @@
 #!/bin/bash
 
+if [ "$#" -ne 1 ]; then
+    echo "You must enter username as argument."
+    return 1 2>/dev/null || exit 1
+fi
+
 echo -e "\n"
 echo Removing Snapd
 echo -e "\n"
-sudo apt purge snapd
+sudo apt purge snapd -y
 sudo apt-mark hold snapd
 
 echo -e "\n"
@@ -54,6 +59,7 @@ echo -e "\n"
 touch /home/$1/.bash_aliases
 echo 'alias cls="clear"' | tee /home/$1/.bash_aliases
 echo 'alias ll="ls -al"' | tee /home/$1/.bash_aliases
+source /home/$1/.bashrc
 
 gsettings set org.gnome.shell.extensions.dash-to-dock show-mounts false
 

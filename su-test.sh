@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if [ "$#" -ne 1 ]; then
+    echo "You must enter username as argument."
+    return 1 2>/dev/null || exit 1
+fi
+
 echo -e "\n"
 echo Installing Nala
 echo -e "\n"
