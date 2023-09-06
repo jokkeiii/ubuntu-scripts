@@ -53,7 +53,7 @@ source /home/$1/.bashrc
 # gsettings set org.gnome.shell.extensions.dash-to-dock show-mounts false
 
 git config --global user.name "jokkeiii"
-git config --global user.email "joakim.ijas@gmail.com"
+git config --global user.email ""
 git config --global init.defaultBranch main
 
 gsettings set org.gnome.settings-daemon.plugins.media-keys home "['<Super>e']"
